@@ -13,3 +13,13 @@ document.getElementById("contact-form").addEventListener("submit", function(even
         document.getElementById("response-message").style.color = "red";
     }
 });
+
+function showTab(tab) {
+    // Hide all lists
+    document.getElementById('skills').style.display = 'none';
+    document.getElementById('education').style.display = 'none';
+    document.getElementById('work').style.display = 'none';
+
+    // Show the selected tab
+    document.getElementById(tab).style.display = 'block';
+}
