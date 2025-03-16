@@ -23,3 +23,4 @@ function showTab(tab) {
     // Show the selected tab
     document.getElementById(tab).style.display = 'block';
 }
+

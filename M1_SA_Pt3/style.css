@@ -55,11 +55,12 @@ nav ul li a {
 section {
     padding: 50px;
     text-align: center;
+    scroll-margin-top: 80px;
 }
 
 /* Full height sections */
 .section {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,6 +76,7 @@ section {
     justify-content: center;
     height: 100vh; /* Full viewport height */
     text-align: center;
+    
 }
 
 .home-container {
@@ -96,6 +98,11 @@ section {
 }
 
 /* About Me Section */
+.about-container, .project-card {
+    display: flex;
+    flex-wrap: wrap; /* Ensures elements don't overflow */
+}
+
 .about-container {
     background: rgba(6, 6, 6, 0.9); 
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
@@ -180,6 +187,24 @@ section {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
 }
 
+.project-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.project-img {
+    width: 500px; /* Increase from 150px to 250px */
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.project-info {
+    max-width: 600px;
+}
+
 /* Contact Form */
 form {
     display: flex;
@@ -196,6 +221,46 @@ input, textarea {
     font-family: 'VT323', monospace;
     font-size: 18px;
 }
+
+.achievement-img {
+    width: 850px; /* Adjust size */
+    height: auto;
+    border-radius: 5px;
+}
+
+
+.excel-icon {
+    width: 20px;  /* Make Excel icon smaller */
+    height: auto;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.upwork-icon {
+    width: 50px;  /* Make Upwork icon larger */
+    height: auto;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+
+.achievement {
+    background: rgba(1, 1, 1, 0.9); 
+    padding: 20px;
+    margin: 10px auto;
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+}
+.contact-info {
+    background: rgba(1, 1, 1, 0.9); 
+    padding: 20px;
+    margin: 10px auto;
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+}
+
 
 /* Buttons */
 button {
