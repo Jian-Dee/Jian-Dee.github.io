@@ -261,6 +261,16 @@ input, textarea {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
 }
 
+.contact-info a {
+
+    color: white;  /* Makes links white */
+    text-decoration: none; /* Optional: Removes underline */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Optional: Adds underline on hover */
+}
+
 
 /* Buttons */
 button {
